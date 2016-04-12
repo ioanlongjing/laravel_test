@@ -18,8 +18,32 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    @yield('content')
+	
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+					data-target="#bs-exampl-navbar-collapse-l"> 
+				<span class="sr-only"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Laravel</a>
+
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#"	>Home</a></li>
+					<li><a href="#"	>NEWS</a></li>
+					<li><a href="#"	>WORK</a></li>
+					<li><a href="#"	>TEAM</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		@section('content')
+	</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
